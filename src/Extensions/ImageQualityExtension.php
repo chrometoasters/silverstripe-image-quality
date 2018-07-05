@@ -1,16 +1,22 @@
 <?php
 
-namespace MBIE\ImageQuality\Extension;
+namespace Chrometoaster\ImageQuality\Extensions;
 
 use SilverStripe\Core\Extension;
 use SilverStripe\Assets\File;
 
 /**
- * Add a Quality method to Images, to be used to reduce the quality (and hence
- * size) of images.
+ * Class ImageQualityExtension
+ * @package Chrometoaster\ImageQuality\Extensions
  */
 class ImageQualityExtension extends Extension
 {
+    /**
+     * This function adjusts the quality of of an image using SilverStripe 4 syntax.
+     *
+     * @param $quality
+     * @return mixed
+     */
     public function Quality($quality)
     {
         // Generate variant key

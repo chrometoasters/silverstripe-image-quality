@@ -1,0 +1,20 @@
+{
+    "name": "chrometoaster/image-quality",
+    "description": "Adds Quality function to images",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "image",
+        "quality"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Douglas McKechie",
+        "email": "doug.mckechie@chrometoaster.com"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "silverstripe/framework": "^4.1"
+    }
+}
