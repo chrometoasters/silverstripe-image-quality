@@ -1,0 +1,16 @@
+{
+  "name": "image-quality",
+  "version": "1.0.0",
+  "description": "Apply image quality in the from front-end templates",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:chrometoaster/ct__silverstripe-image-quality.git"
+  },
+  "keywords": [
+    "silverstripe",
+    "image",
+    "quality"
+  ],
+  "author": "Chrometoaster",
+  "license": "BSD-3-Clause"
+}
