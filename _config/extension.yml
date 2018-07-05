@@ -3,4 +3,4 @@ Name: image-quality
 ---
 SilverStripe\Assets\Image:
   extensions:
-    - Chrometoaster\ImageQuality\Extension\ImageQualityExtension
+    - Chrometoaster\ImageQuality\Extensions\ImageQualityExtension
