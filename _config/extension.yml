@@ -1,0 +1,4 @@
+---
+SilverStripe\Assets\Image:
+  extensions:
+    - MBIE\ImageQuality\Extension\ImageQualityExtension
