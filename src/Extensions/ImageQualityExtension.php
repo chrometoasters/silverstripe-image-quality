@@ -23,8 +23,11 @@ class ImageQualityExtension extends Extension
 
         // Instruct the backend to search for an existing variant and use the callback to provide it if it does not exist.
         return $this->owner->manipulateImage($variant, function (Image_Backend $backend) use ($quality) {
-            $backendClone = clone $backend;
+            $backendClone  = clone $backend;
+            $resourceClone = clone $backend->getImageResource();
+
             $backendClone->setQuality($quality);
+            $backendClone->setImageResource($resourceClone);
 
             return $backendClone;
         });
