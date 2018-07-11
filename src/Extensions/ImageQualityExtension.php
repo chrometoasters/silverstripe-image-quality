@@ -2,6 +2,7 @@
 
 namespace Chrometoaster\ImageQuality\Extensions;
 
+use SilverStripe\Assets\Image_Backend;
 use SilverStripe\Core\Extension;
 use SilverStripe\Assets\File;
 
@@ -22,9 +23,12 @@ class ImageQualityExtension extends Extension
         // Generate variant key
         $variant = $this->owner->variantName(__FUNCTION__, $quality);
 
-        // Instruct the backend to search for an existing variant and if not callback to generate the image if it does not exist.
-        return $this->owner->manipulateImage($variant, function($backend) use ($quality) {
-            return $backend->setQuality($quality);
+        // Instruct the backend to search for an existing variant and use the callback to provide it if it does not exist.
+        return $this->owner->manipulateImage($variant, function (Image_Backend $backend) use ($quality) {
+            $backendClone = clone $backend;
+            $backendClone->setQuality($quality);
+
+            return $backendClone;
         });
     }
 }
