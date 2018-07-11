@@ -4,11 +4,9 @@ namespace Chrometoaster\ImageQuality\Extensions;
 
 use SilverStripe\Assets\Image_Backend;
 use SilverStripe\Core\Extension;
-use SilverStripe\Assets\File;
 
 /**
  * Class ImageQualityExtension
- * @package Chrometoaster\ImageQuality\Extensions
  */
 class ImageQualityExtension extends Extension
 {
