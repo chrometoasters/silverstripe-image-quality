@@ -1,0 +1,2 @@
+imports:
+    - { resource: '%vendor_dir%/chrometoaster/backend-coding-standards/config/chrometoaster.yml' }

@@ -4,3 +4,6 @@ Name: image-quality
 SilverStripe\Assets\Image:
   extensions:
     - Chrometoaster\ImageQuality\Extensions\ImageQualityExtension
+SilverStripe\Assets\Storage\DBFile:
+  extensions:
+    - Chrometoaster\ImageQuality\Extensions\ImageQualityExtension

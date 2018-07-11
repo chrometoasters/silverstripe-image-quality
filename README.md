@@ -17,7 +17,7 @@ Higher quality images are larger, so reducing the quality will likely reduce the
 composer require chrometoaster/silverstripe-image-quality:~1.0
 ```
 
-The instance gets automatically applied to `Silverstripe\Assets\Image` class.
+The extension gets automatically applied to necessary classes (see `_config/extension.yml` for details).
 
 ## Usage
 
