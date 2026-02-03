@@ -9,7 +9,7 @@ Higher quality images are larger, so reducing the quality will likely reduce the
 
 ## Requirements
 
-* SilverStripe 4
+* SilverStripe 4, 5 or 6
 
 ## Installation
 
